@@ -1,6 +1,6 @@
-from src.CNNClassifier.constants import *
-from src.CNNClassifier.utils.common import read_yaml,create_directories
-from src.CNNClassifier.entity.config_entity import DataIngestionConfig
+from CNNClassifier.constants import *
+from CNNClassifier.utils.common import read_yaml,create_directories
+from CNNClassifier.entity.config_entity import DataIngestionConfig
 # Update configuration manager
 class ConfigurationManager:
     def __init__(
