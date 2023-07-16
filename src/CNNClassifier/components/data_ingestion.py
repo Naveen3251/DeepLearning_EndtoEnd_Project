@@ -6,7 +6,6 @@ from CNNClassifier import logger #custom logger
 from CNNClassifier.utils.common import get_size #to se the data soze
 from CNNClassifier.entity.config_entity import DataIngestionConfig
 
-
 # Update DataIngestion class
 class DataIngestion:
     def __init__(self, config: DataIngestionConfig):
