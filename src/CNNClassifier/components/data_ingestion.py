@@ -2,10 +2,10 @@
 import os
 import urllib.request as request # to download the data
 import zipfile #unzip the file
-from src.CNNClassifier import logger #custom logger
-from src.CNNClassifier.utils.common import get_size #to se the data soze
-from src.CNNClassifier.entity.config_entity import DataIngestionConfig
-from pathlib import Path
+from CNNClassifier import logger #custom logger
+from CNNClassifier.utils.common import get_size #to se the data soze
+from CNNClassifier.entity.config_entity import DataIngestionConfig
+
 
 # Update DataIngestion class
 class DataIngestion:
