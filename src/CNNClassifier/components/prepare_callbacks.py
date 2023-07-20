@@ -4,7 +4,7 @@ from CNNClassifier.entity.config_entity import PrepareCallbacksConfig
 import tensorflow as tf
 import time
 import os 
-
+from pathlib import Path
 
 class PrepareCallback:
     def __init__(self,config: PrepareCallbacksConfig):
@@ -15,16 +15,16 @@ class PrepareCallback:
         timestamp=time.strftime('%Y-%m-%d-%H-%M-%S')
 
         tb_running_log_dir=os.path.join(
-            str(self.config.tensorboard_root_log_dir),
+            self.config.tensorboard_root_log_dir,
             f"tb_logs_at{timestamp}"
         )
 
-        return tb_running_log_dir
+        return tf.keras.callbacks.TensorBoard(log_dir=tb_running_log_dir)
     
     @property
     def _create_ckpt_callbacks(self):
         return tf.keras.callbacks.ModelCheckpoint(
-            filepath=str(self.config.checkpoint_model_filepath),
+            filepath=self.config.checkpoint_model_filepath.as_posix(),
             save_best_only=True
         )
     
