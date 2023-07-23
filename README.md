@@ -21,7 +21,7 @@ Step 6: Now open Your Local cloned file in VS code <br>
 Step 7: Start to work in your desired project
 
 ## Create vitrual environment
-'''python
+'''bash
 python -m venv env <br>
 ## To activate the virtual environment
 '''python
