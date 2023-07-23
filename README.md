@@ -21,15 +21,12 @@ Step 6: Now open Your Local cloned file in VS code <br>
 Step 7: Start to work in your desired project
 
 ## Create vitrual environment
-'''bash
 python -m venv env <br>
 ## To activate the virtual environment
-'''python
 .\environmentname\Scripts\Activate
 
 ## To push your changes to your source repo of github 
 ### Use following command
-'''python
 git add . <br>
 git commit -m "message" <br>
 git push origin main <br>
