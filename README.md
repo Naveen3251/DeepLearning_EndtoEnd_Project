@@ -57,3 +57,15 @@ dvc dag
 ## Result
 
 ![Web capture_23-7-2023_155622_127 0 0 1](https://github.com/Naveen3251/DeepLearning_EndtoEnd_Project/assets/114800360/69282157-f296-4512-a556-1a9d45c8ef2f)
+
+## Other basics
+### how to write .gitignore file
+Inside the .gitignore file, you can add patterns to ignore specific files or directories. Each pattern is written on a separate line. Here are some examples of patterns:<br>
+
+Ignore a specific file: myfile.txt<br>
+Ignore files with a specific extension: *.log, *.tmp, *.dll<br>
+Ignore a directory: myfolder/<br>
+Ignore all files in a directory: myfolder/*<br>
+Ignore all .csv files: *.csv<br>
+Ignore all files in the root folder: /*<br>
+Ignore all files in subdirectories of a specific folder: myfolder/*/*<br>
