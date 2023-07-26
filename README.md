@@ -92,6 +92,8 @@ dvc checkout<br>
 
 Again back to original state by
 git checkout master
+
+
 dvc checkout
 
 
