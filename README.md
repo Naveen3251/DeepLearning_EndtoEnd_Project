@@ -69,3 +69,32 @@ Ignore all files in a directory: myfolder/*<br>
 Ignore all .csv files: *.csv<br>
 Ignore all files in the root folder: /*<br>
 Ignore all files in subdirectories of a specific folder: myfolder/*/*<br>
+
+## git and dvc for data tracking
+dvc-->mainly used for tracking data
+To initialize git : git init <br>
+Upload your data in env <br>
+Now initialize dvc : dvc init <br>
+Note: Before [dvc init] ensure you downloaded in env and when you run the dvc init command you will get .dvc and .dvcignore file<br>
+
+Adding the data to dvc:dvc add path/filename <br>
+Note: After the above step we will get .gitignore and .dvc data file inside the data directory<br>
+
+Now you have to add these ,gitignore and .dvc file in git (because .dvc file conatins hash key of the original data through that hash key we can access the original data and remoteky track without upload in github<br>
+git add path/.gitignore<br>
+git add path/filename.dvc<br>
+
+switch to particular commit of data
+run: git log<br>
+You will get all logs along with commit key copy your desired key and then run<n=br>
+git checkout <key>
+dvc checkout<br>
+
+Again back to original state by
+git checkout master
+dvc checkout
+
+
+
+
+
