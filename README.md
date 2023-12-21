@@ -59,13 +59,18 @@ Set -ExecutionPolicy -Scope Process -ExecutionPolicy Restricted
 ## DVC-Data version control
 DVC is used to track the changes in the pipeline.This is very helpfull in avoiding the repeated execution of the file which is already executed in the pipeline.<br>
 
-1.Initialize dvc by running<br>
-#### dvc init <br>
-2.To run dvc pipeline <br>
-#### dvc repro<br>
-3.If you have to see relationship between each stage of pipeline <br>
-#### dvc dag
-
+#### 1.Initialize dvc by running<br>
+```
+dvc init
+```
+#### 2.To run dvc pipeline <br>
+```
+dvc repro
+```
+#### 3.If you have to see relationship between each stage of pipeline <br>
+```
+dvc dag
+```
 ## Result
 
 ![Web capture_23-7-2023_155622_127 0 0 1](https://github.com/Naveen3251/DeepLearning_EndtoEnd_Project/assets/114800360/69282157-f296-4512-a556-1a9d45c8ef2f)
