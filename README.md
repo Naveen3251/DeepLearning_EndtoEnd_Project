@@ -21,31 +21,39 @@ Step 7: Start to work in your desired project
 
 ## Create vitrual environment
 ```
-#### python -m venv env
+python -m venv env
 ```
 ## To activate the virtual environment
 ```
-#### .\<environmentname>\Scripts\Activate
+.\<environmentname>\Scripts\Activate
 ```
 ## To push your changes to your source repo of github 
 ### Use following command
-#### git add . <br>
-#### git commit -m "message" <br>
-#### git push origin main <br>
+```
+git add . 
+git commit -m "message"
+git push origin main
+```
 
 ### Sometimes if you try to connect with  github if will ask for Authentication
 Open cmd use these two commands,<br>
-#### git config --global user.gmail "Yourmail@gmail.com" <br>
-#### git config --global user.name "GithubUserName" <br>
+```
+git config --global user.gmail "Yourmail@gmail.com"
+git config --global user.name "GithubUserName"
+```
 
 Then you can connect and push your updates to your repository
 
 ### You may sometimes face security issue
 Open Windows powerShell Admin <br>
-#### Set -ExecutionPolicy -Scope Process -ExecutionPolicy Bypass <br>
+```
+Set -ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
 
 ### After completion of your work To avoid security implication
-#### Set -ExecutionPolicy -Scope Process -ExecutionPolicy Restricted <br>
+```
+Set -ExecutionPolicy -Scope Process -ExecutionPolicy Restricted
+```
 
 
 ## DVC-Data version control
@@ -76,27 +84,42 @@ Inside the .gitignore file, you can add patterns to ignore specific files or dir
 
 ## git and dvc for data tracking
 dvc-->mainly used for tracking data
-#### To initialize git : git init <br>
+#### To initialize git : 
+```
+git init
+```
 Upload your data in env <br>
-#### Now initialize dvc : dvc init <br>
+#### Now initialize dvc :
+```
+dvc init
+```
 Note: Before [dvc init] ensure you downloaded in env and when you run the dvc init command you will get .dvc and .dvcignore file<br>
 
-Adding the data to dvc:<br>
-#### dvc add path/filename <br>
+#### Adding the data to dvc:<br>
+```
+dvc add path/filename
+```
 Note: After the above step we will get .gitignore and .dvc data file inside the data directory<br>
 
 Now you have to add these ,gitignore and .dvc file in git (because .dvc file conatins hash key of the original data through that hash key we can access the original data and remoteky track without upload in github<br>
-#### git add path/.gitignore<br>
-#### git add path/filename.dvc<br>
+```
+git add path/.gitignore
+git add path/filename.dvc
+```
 
-switch to particular commit of data
-run:<br>
-#### git log<br>
-You will get all logs along with commit key copy your desired key and then run<n=br>
-#### git checkout <key>
-#### dvc checkout<br>
+#### switch to particular commit of data run:<br>
+```
+git log
+```
+### You will get all logs along with commit key copy your desired key and then run<br>
+```
+git checkout <key>
+dvc checkout
+```
 
-Again back to original state by
-#### git checkout master<br>
-#### dvc checkout
+#### Again back to original state by
+```
+git checkout master
+dvc checkout
+```
 
